@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+  var cars = ['car1','car2','car3','car4'];
+  cars.forEach(car);
+
+  function car(item,index,Array){
+   //document.write(index+"=>"+item+"<br>");
+   Array[index] = item +" 0";
+  }
+ cars.forEach(after);
+ function after(item,index,Array){
+    document.write(index+"=>"+item+"<br>")
+ }
+</script>
+</html>
