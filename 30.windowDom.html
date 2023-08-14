@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openwin()" >Open new link</button>
+    <button onclick="closewin()">  close</button>
+</body>
+<script>
+    var win;
+    function openwin(){
+    win = window.open("https://w3schools.com","width=500px","height=500px");
+    }
+    function closewin(){
+     win.close(); }
+</script>
+</html>
