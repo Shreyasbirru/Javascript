@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div style="width: 200px; height: 200px; background-color: black; margin: auto;"></div>
+    <br ><h1>Printable data</h1>
+    <p id="data">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro assumenda perferendis recusandae id, nulla necessitatibus odit harum quam. Vitae labore natus rerum, iure beatae mollitia laborum dolores voluptatem quos delectus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam alias sed dolore molestiae molestias quas! Corporis eum expedita soluta libero omnis atque, saepe reprehenderit. Voluptatum placeat voluptatibus dicta sint suscipit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda alias distinctio est explicabo debitis eaque dignissimos eum, maiores non obcaecati magnam incidunt, id earum hic laudantium voluptatibus dolorem fuga labore?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi optio non sequi ut placeat doloribus maiores nostrum voluptatem tenetur repellat fugiat, corporis necessitatibus harum officiis quibusdam unde odio laborum ratione.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolorum nulla commodi eius voluptas consectetur. Corrupti explicabo laboriosam voluptas quidem doloremque adipisci dicta aut, placeat nisi sapiente quisquam esse omnis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis repellendus veritatis ad iusto dolorem explicabo ut labore doloribus commodi inventore reiciendis officiis, accusantium, eos eligendi obcaecati consectetur quam sequi dolore!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum minima quia labore illo assumenda fuga architecto aliquam alias, laborum corporis voluptate tempora dolor quis? Ad dolore culpa repellat odit! Magni.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis commodi, eligendi explicabo veniam repudiandae hic magni ab neque at, reiciendis culpa id quis nam fugiat numquam cum inventore iusto? Minima.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus nisi, recusandae dolorum architecto asperiores magnam. Corrupti, repudiandae sit cupiditate officia rem voluptates cumque aut maiores perspiciatis nostrum, corporis deleniti sed.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cupiditate modi in beatae nisi non pariatur atque laborum odit, unde iusto voluptates reiciendis eligendi exercitationem doloribus perferendis autem adipisci quis.
+
+    </p>
+    <button onclick="printPage()">Print content</button>
+</body>
+<script>
+    function printPage(){
+        var body = document.getElementById('body').innerHTML;
+        var data = document.getElementById('data').innerHTML;
+        document.getElementById('body').innerHTML=data;
+        window.print();
+        document.getElementById('body').innerHTML=body;
+    }
+</script>
+</html>
